@@ -1,6 +1,6 @@
 <?php
 
-  echo "line bot";
+  	echo "line bot";
 
 	/*Get Data From POST Http Request*/
 	$datas = file_get_contents('php://input');
@@ -20,7 +20,8 @@
 	$encodeJson = json_encode($messages);
 
 	$LINEDatas['url'] = "https://api.line.me/v2/bot/message/reply";
-  	$LINEDatas['token'] = "<YOUR-CHANNEL-ACCESS-TOKEN>";
+//   	$LINEDatas['token'] = "<YOUR-CHANNEL-ACCESS-TOKEN>";
+	$LINEDatas['token'] = "etedhQfQK7mSmghZy9qNu3O4O2n4mmHdxtrL5wyPPFdl/PRlGtawq7dxtDAGAib9Y7pUZtBPMYLao8oL3LOE/vl6NXaWhCH1aSUeL+q2OmQaxflxy/S8b/ePX2ABSA7KDMj70QasZw3O80LWC6nb+QdB04t89/1O/w1cDnyilFU=";
 
   	$results = sentMessage($encodeJson,$LINEDatas);
 
